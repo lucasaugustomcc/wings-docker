@@ -63,14 +63,14 @@ class ManageData(UserOperation):
 
 	def get_data_description(self, dataid):
 		dataid = self.get_data_id(dataid)
-		postdata = { 'data_id': dataid }
-		resp = self.session.post( self.get_request_url() + 'data/getDataJSON', postdata )
+		paramdata = { 'data_id': dataid }
+		resp = self.session.get( self.get_request_url() + 'data/getDataJSON', params = paramdata )
 		return resp.json()
 
 	def get_datatype_description(self, dtype):
 		dtype = self.get_type_id(dtype)
-		postdata = { 'data_type': dtype }
-		resp = self.session.post( self.get_request_url() + 'data/getDataTypeJSON', postdata )
+		paramdata = { 'data_type': dtype }
+		resp = self.session.get( self.get_request_url() + 'data/getDataTypeJSON', params = paramdata )
 		return resp.json()
 
 	def upload_data_for_type(self, filepath, dtype):
