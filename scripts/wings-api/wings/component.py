@@ -21,7 +21,20 @@ class ManageComponent(UserOperation):
 		else:
 			return cid
 
-	def get_componenttype_description(self, ctype):
+	def add_component_type(self, ctype, parent):
+		parent = self.get_type_id(parent)
+		ctype = self.get_type_id(ctype)
+		postdata = { 'parent_type': parent , 'cid': ctype }
+		self.session.post( self.get_request_url() + 'components/type/addComponent', postdata )
+
+	def add_component_for_type(self, cid, parent_type, parent_cid):
+		parent_cid = self.get_component_id(parent_cid)
+		parent_type = self.get_type_id(parent_type)
+		cid = self.get_component_id(cid)
+		postdata = { 'parent_cid': parent_cid, 'parent_type': parent_type, 'cid': cid }
+		self.session.post( self.get_request_url() + 'components/addComponent', postdata )
+
+	def get_component_type_description(self, ctype):
 		ctype = self.get_type_id(ctype)
 		paramdata = { 'cid': ctype }
 		resp = self.session.get( self.get_request_url() + 'components/type/getComponentJSON', params = paramdata )
@@ -32,3 +45,18 @@ class ManageComponent(UserOperation):
 		paramdata = { 'cid': cid }
 		resp = self.session.get( self.get_request_url() + 'components/getComponentJSON', params = paramdata )
 		return resp.json()
+
+	def initialize_component_code(self, cid, language="Generic"):
+		cid = self.get_component_id(cid)
+		postdata = { 'cid': cid, 'language': language }
+		resp = self.session.post( self.get_request_url() + 'components/fb/initialize', postdata )
+		return resp.json()
+
+	def save_component_code(self, cid, code, path="run"):
+		cid = self.get_component_id(cid)
+		postdata = { 'cid': cid, 'path': path, 'filedata': code }
+		resp = self.session.post( self.get_request_url() + 'components/fb/save', postdata )
+
+	def save_component(self, metadata):
+		postdata = { 'component_json': json.dumps(metadata) }
+		self.session.post( self.get_request_url() + 'components/saveComponentJSON', postdata )
