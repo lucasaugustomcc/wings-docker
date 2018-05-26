@@ -2,7 +2,7 @@ import os
 import re
 import json
 from .userop import UserOperation
-
+ 
 class ManageComponent(UserOperation):
 
 	def __init__(self, server, userid, domain, location=""):

@@ -26,7 +26,7 @@ BASEDIR=`dirname $0`
 """ + self.invocation_code + " " + (" ").join(["$INPUTS"+str(i) for i,input in enumerate(self.inputs,1) if input['isParam'] == False]) + " " + (" ").join(["$PARAMS"+str(i+1) for i,input in enumerate(self.inputs) if input['isParam'] == True]) + " " + (" ").join(["$OUTPUTS"+str(i+1) for i,output in enumerate(self.outputs)]) + """
 
 checkExitCode
-"""
+""" 
 		return code
 
 	def getJSON(self):

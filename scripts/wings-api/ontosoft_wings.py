@@ -2,7 +2,7 @@ import json
 import requests
 from Function import Function
 import wings.component
-
+ 
 server = 'http://localhost:8080/wings-portal'
 userid = 'lucas'
 password = 'lucas'
