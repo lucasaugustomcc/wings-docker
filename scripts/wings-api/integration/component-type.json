@@ -1,0 +1,170 @@
+{
+   "type":1,
+   "inputs":[
+      {
+         "role":"model",
+         "prefix":"-l",
+         "isParam":false,
+         "type":"http://localhost:8080/wings-portal/export/users/lucas/DMDomain/data/ontology.owl#Model",
+         "dimensionality":0,
+         "id":"http://localhost:8080/wings-portal/export/users/lucas/DMDomain/components/library.owl#DTClassifier_model"
+      },
+      {
+         "role":"testData",
+         "prefix":"-T",
+         "isParam":false,
+         "type":"http://localhost:8080/wings-portal/export/users/lucas/DMDomain/data/ontology.owl#Instance",
+         "dimensionality":0,
+         "id":"http://localhost:8080/wings-portal/export/us~/git/wings-docker/scripts/wings-apiers/lucas/DMDomain/components/library.owl#DTClassifier_testData"
+      },
+      {
+         "role":"classIndex",
+         "prefix":"-c",
+         "isParam":true,
+         "type":"http://www.w3.org/2001/XMLSchema#integer",
+         "dimensionality":0,
+         "paramDefaultValue":0,
+         "id":"http://localhost:8080/wings-portal/export/users/lucas/DMDomain/components/library.owl#DTClassifier_classIndex"
+      }
+   ],
+   "outputs":[
+      {
+         "role":"classification",
+         "prefix":"-O",
+         "isParam":false,
+         "type":"http://localhost:8080/wings-portal/export/users/lucas/DMDomain/data/ontology.owl#DTClassification",
+         "dimensionality":0,
+         "id":"http://localhost:8080/wings-portal/export/users/lucas/DMDomain/components/library.owl#DTClassifier_classification"
+      }
+   ],
+   "rules":[
+      "[ invalidityDTClassifiersCantConsumeBayesModels: print(Firing invalidityDTClassifiersCantConsumeBayesModels) (?c rdf:type acdom:DTClassifierClass) (?c ac:hasInput ?idv) (?idv rdf:type dcdom:BayesModel) -> (?c ac:isInvalid "true"^^xsd:boolean) print(Template is invalid because ?idv has rdf:type BayesModel and DTClassifiers cant consume BayesModels) ]"
+   ],
+   "inheritedRules":[
+      "[ instancesThatAreNotDiscreteAreContinuous: print(Firing instancesThatAreNotDiscreteAreContinuous) (?x dcdom:isDiscrete "false"^^xsd:boolean) (?x rdf:type dcdom:Instance) -> (?x rdf:type dcdom:ContinuousInstance) print(Setting ?x rdf:type to Instance because ?x is discrete) ]",
+      "[ continuousInstancesAreNotDiscrete: print(Firing continuousInstancesAreNotDiscrete) (?x rdf:type dcdom:ContinuousInstance) -> (?x dcdom:isDiscrete "false"^^xsd:boolean) print(Setting ?x dcdom:isDiscrete false because ?x is ContinuousInstance) ]",
+      "[ discreteInstancesAreDiscrete: print(Firing discreteInstancesAreDiscrete) (?x rdf:type dcdom:DiscreteInstance) -> (?x dcdom:isDiscrete "true"^^xsd:boolean) print(Setting ?x dcdom:isDiscrete true because ?x is DiscreteInstance) ]",
+      "[ forwardClassifierTransferNumberOfInstances: print(Firing forwardClassifierTransferNumberOfInstances) (?c rdf:type acdom:ClassifierClass) (?c ac:hasOutput ?odv) (?odv ac:hasArgumentID "classification") (?c ac:hasInput ?idvdata) (?idvdata ac:hasArgumentID "testData") (?idvdata dcdom:hasNumberOfInstances ?val) -> (?odv dcdom:hasNumberOfInstances ?val) print(Setting dcdom:hasNumberOfInstances for ?odv to ?val for ?c) ]",
+      "[ backwardClassifierModelAndTestDataHaveSameDomain: print(Firing backwardClassifierModelAndTestDataHaveSameDomain) (?c rdf:type acdom:ClassifierClass) (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?c ac:hasInput ?idvdata) (?idvdata ac:hasArgumentID "testData") noValue(?idvmodel dcdom:hasDomain) noValue(?idvdata dcdom:hasDomain) uriConcat(?idvmodel "_domain" ?dom) -> (?idvmodel dcdom:hasDomain ?dom) (?idvdata dcdom:hasDomain ?dom) print(Setting domain of ?idvmodel and ?idvdata to ?dom because both inputs to the Classifier should be from the same domain) ]",
+      "[ invalidityClassifierClassIndexConsistent: print(Firing invalidityClassifierClassIndexConsistent) (?c rdf:type acdom:ClassifierClass) (?c ac:hasOutput ?odv) (?odv ac:hasArgumentID "classification") (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?c ac:hasInput ?idvdata) (?idvdata ac:hasArgumentID "testData") (?idvmodel dcdom:hasClassIndex ?val1) (?idvdata dcdom:hasClassIndex ?val2) notEqual(?val1 ?val2) -> (?c ac:isInvalid "true"^^xsd:boolean) print(ERROR : Template is invalid because ?idvmodel hasClassIndex ?val1 and ?idvdata hasClassIndex ?val2 are not equal.) ]",
+      "[ backwardClassifierTransferMissingValues: print(Firing backwardClassifierTransferMissingValues) (?c rdf:type acdom:ClassifierClass) (?c ac:hasOutput ?odv) (?odv ac:hasArgumentID "classification") (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?c ac:hasInput ?idvdata) (?idvdata ac:hasArgumentID "testData") (?odv dcdom:hasMissingValues ?val) -> (?idvmodel dcdom:hasMissingValues ?val) print(Setting hasMissingValues of Classifier input model ?idvmodel to ?val because the hasMissingValues of ?odv is ?val) ]",
+      "[ forwardClassifierTransferHasDomain: print(Firing forwardClassifierTransferHasDomain) (?c rdf:type acdom:ClassifierClass) (?c ac:hasOutput ?odv) (?odv ac:hasArgumentID "classification") (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?idvmodel dcdom:hasDomain ?val) -> (?idvdata dcdom:hasDomain ?val) print(Setting dcdom:hasDomain for ?odv to ?val for ?c) ]",
+      "[ invalidityClassifierAreaConsistent: print(Firing invalidityClassifierAreaConsistent) (?c rdf:type acdom:ClassifierClass) (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?c ac:hasInput ?idvdata) (?idvdata ac:hasArgumentID "testData") (?idvmodel dcdom:hasArea ?val1) (?idvdata dcdom:hasArea ?val2) notEqual(?val1 ?val2) -> (?c ac:isInvalid "true"^^xsd:boolean) print(ERROR : Template is invalid because ?idvmodel hasArea ?val1 and ?idvdata hasArea ?val2 are not equal.) ]",
+      "[ forwardClassifierTransferNumberOfBins: print(Firing forwardClassifierTransferNumberOfBins) (?c rdf:type acdom:ClassifierClass) (?c ac:hasOutput ?odv) (?odv ac:hasArgumentID "classification") (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?idvmodel dcdom:hasNumberOfBins ?val) (?idvdata dcdom:hasNumberOfBins ?val) -> (?odv dcdom:hasNumberOfBins ?val) print(Setting dcdom:hasNumberOfBins for ?odv to ?val for ?c) ]",
+      "[ forwardClassifierTransferHasMissingValues: print(Firing forwardClassifierTransferHasMissingValues) (?c rdf:type acdom:ClassifierClass) (?c ac:hasOutput ?odv) (?odv ac:hasArgumentID "classification") (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?idvmodel dcdom:hasMissingValues ?val) -> (?odv dcdom:hasMissingValues ?val) print(Setting dcdom:hasMissingValues for ?odv to ?val for ?c) ]",
+      "[ parameterClassIndexDefaultClassifier: print(firing parameterClassIndexDefaultClassifier) (? rdf:type acdom:ClassifierClass) (?c ac:hasInput ?idv) (?idv ac:hasArgumentID "testData") (?c ac:hasInput ?ipv) (?ipv ac:hasArgumentID "classIndex") (?idv dcdom:hasClassIndex ?ci) -> (?ipv ac:hasValue ?ci) print(Setting classIndex of Discretize to ?ci because the ?idv has ?ci) ]",
+      "[ backwardClassifierTransferNumberOfBins: print(Firing backwardClassifierTransferNumberOfBins) (?c rdf:type acdom:ClassifierClass) (?c ac:hasOutput ?odv) (?odv ac:hasArgumentID "classification") (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?c ac:hasInput ?idvdata) (?idvdata ac:hasArgumentID "testData") (?odv dcdom:hasNumberOfBins ?val) -> (?idvmodel dcdom:hasNumberOfBins ?val) (?idvdata dcdom:hasNumberOfBins ?val) print(Setting hasNumberOfBins of Classifier input model ?idvmodel to ?val because the hasNumberOfBins of ?odv is ?val) ]",
+      "[ backwardClassifierTransferIsDiscrete: print(Firing backwardClassifierTransferIsDiscrete) (?c rdf:type acdom:ClassifierClass) (?c ac:hasOutput ?odv) (?odv ac:hasArgumentID "classification") (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?c ac:hasInput ?idvdata) (?idvdata ac:hasArgumentID "testData") (?odv dcdom:isDiscrete ?val) -> (?idvmodel dcdom:isDiscrete ?val) (?idvdata dcdom:isDiscrete ?val) print(Setting isDiscrete of Classifier inputs ?idvmodel and ?idvdata to ?val because the isDiscrete of ?odv is ?val) ]",
+      "[ backwardClassifierTransferNumberOfClasses: print(Firing backwardClassifierTransferNumberOfClasses) (?c rdf:type acdom:ClassifierClass) (?c ac:hasOutput ?odv) (?odv ac:hasArgumentID "classification") (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?c ac:hasInput ?idvdata) (?idvdata ac:hasArgumentID "testData") (?odv dcdom:hasNumberOfClasses ?val) -> (?idvmodel dcdom:hasNumberOfClasses ?val) print(Setting hasNumberOfClasses of Classifier input model ?idvmodel to ?val because the hasNumberOfClasses of ?odv is ?val) ]",
+      "[ invalidityClassifierDomainConsistent: print(Firing invalidityClassifierDomainConsistent) (?c rdf:type acdom:ClassifierClass) (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?c ac:hasInput ?idvdata) (?idvdata ac:hasArgumentID "testData") (?idvmodel dcdom:hasDomain ?val1) (?idvdata dcdom:hasDomain ?val2) notEqual(?val1 ?val2) -> (?c ac:isInvalid "true"^^xsd:boolean) print(ERROR : Template is invalid because ?idvmodel hasDomain ?val1 and ?idvdata hasDomain ?val2 are not equal.) ]",
+      "[ invalidityClassifierNumberOfBinsConsistent: print(Firing invalidityClassifierNumberOfBinsConsistent) (?c rdf:type acdom:ClassifierClass) (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?c ac:hasInput ?idvdata) (?idvdata ac:hasArgumentID "testData") (?idvmodel dcdom:hasNumberOfBins ?val1) (?idvdata dcdom:hasNumberOfBins ?val2) notEqual(?val1 ?val2) -> (?c ac:isInvalid "true"^^xsd:boolean) print(ERROR : Template is invalid because ?idvmodel hasNumberOfBins ?val1 and ?idvdata hasNumberOfBins ?val2 are not equal.) ]",
+      "[ backwardClassifierTransferClassIndex: print(Firing backwardClassifierTransferClassIndex) (?c rdf:type acdom:ClassifierClass) (?c ac:hasOutput ?odv) (?odv ac:hasArgumentID "classification") (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?c ac:hasInput ?idvdata) (?idvdata ac:hasArgumentID "testData") (?odv dcdom:hasClassIndex ?val) -> (?idvmodel dcdom:hasClassIndex ?val) print(Setting hasClassIndex of Classifier input model ?idvmodel to ?val because the hasClassIndex of ?odv is ?val) ]",
+      "[ forwardClassifierDataMetricsTransfer: print(Firing forwardClassifierDataMetricsTransfer) (?c rdf:type acdom:ClassifierClass) (?c ac:hasOutput ?odv) (?odv ac:hasArgumentID "classification") (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?c ac:hasInput ?idvdata) (?idvdata ac:hasArgumentID "testData") (?idvmodel dcdom:isDiscrete ?val) (?idvdata dcdom:isDiscrete ?val) -> (?odv dcdom:isDiscrete ?val) print(Transferring dc:hasDataMetrics forward for ?c) ]",
+      "[ backwardClassifierModelAndTestDataHaveSameNumBins: print(Firing backwardClassifierModelAndTestDataHaveSameNumBins) (?c rdf:type acdom:ClassifierClass) (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?c ac:hasInput ?idvdata) (?idvdata ac:hasArgumentID "testData") noValue(?idvmodel dcdom:hasNumberOfBins) noValue(?idvdata dcdom:hasNumberOfBins) uriConcat(?idvmodel "_numBins" ?numBins) -> (?idvmodel dcdom:hasNumberOfBins ?numBins) (?idvdata dcdom:hasNumberOfBins ?numBins) print(Setting numBins of ?idvmodel and ?idvdata to ?numBins because both inputs to the Classifier should have the same number of bins) ]",
+      "[ forwardClassifierTransferNumberOfClasses: print(Firing forwardClassifierTransferNumberOfClasses) (?c rdf:type acdom:ClassifierClass) (?c ac:hasOutput ?odv) (?odv ac:hasArgumentID "classification") (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?c ac:hasInput ?idvdata) (?idvdata ac:hasArgumentID "testData") (?idvmodel dcdom:hasNumberOfClasses ?val) (?idvdata dcdom:hasNumberOfClasses ?val) -> (?odv dcdom:hasNumberOfClasses ?val) print(Setting dcdom:hasNumberOfClasses for ?odv to ?val for ?c) ]",
+      "[ backwardClassifierModelAndTestDataHaveSameArea: print(Firing backwardClassifierModelAndTestDataHaveSameArea) (?c rdf:type acdom:ClassifierClass) (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?c ac:hasInput ?idvdata) (?idvdata ac:hasArgumentID "testData") noValue(?idvmodel dcdom:hasArea) noValue(?idvdata dcdom:hasArea) uriConcat(?idvmodel "_area" ?area) -> (?idvmodel dcdom:hasArea ?area) (?idvdata dcdom:hasArea ?area) print(Setting area of ?idvmodel and ?idvdata to ?area because both inputs to the Classifier should be from the same area) ]",
+      "[ backwardClassifierModelAndTestDataHaveSameDiscreteness: print(Firing backwardClassifierModelAndTestDataHaveSameDiscreteness) (?c rdf:type acdom:ClassifierClass) (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?c ac:hasInput ?idvdata) (?idvdata ac:hasArgumentID "testData") noValue(?idvmodel dcdom:isDiscrete) noValue(?idvdata dcdom:isDiscrete) uriConcat(?idvmodel "_isDiscrete" ?isDiscrete) -> (?idvmodel dcdom:isDiscrete ?isDiscrete) (?idvdata dcdom:isDiscrete ?isDiscrete) print(Setting discreteness of ?idvmodel and ?idvdata to ?isDiscrete because both inputs to the Classifier should have the same discreteness) ]",
+      "[ forwardClassifierMetricsTransfer: print(Firing forwardClassifierMetricsTransfer) (?c rdf:type acdom:ClassifierClass) (?c ac:hasOutput ?odv) (?odv ac:hasArgumentID "classification") (?c ac:hasInput ?idvmodel) (?idvmodel ac:hasArgumentID "model") (?c ac:hasInput ?idvdata) (?idvdata ac:hasArgumentID "testData") (?idvmodel ?p ?val) (?idvdata ?p ?val) (?p rdfs:subPropertyOf dc:hasMetrics) -> (?odv ?p ?val) print(Transferring dc:hasMetrics forward for ?c) ]"
+   ],
+   "documentation":"<font face=\"null\">test doc</font>",
+   "requirement":{
+      "storageGB":0.0,
+      "memoryGB":0.0,
+      "need64bit":false,
+      "softwareIds":[
+
+      ]
+   },
+   "id":"http://localhost:8080/wings-portal/export/users/lucas/DMDomain/components/library.owl#DTClassifier"
+}{
+   "inputs":[
+      {
+         "dimensionality":0,
+         "prefix":"-l",
+         "isParam":False,
+         "role":"model",
+         "type":         "http:         //localhost:8080         /wings-portal/export/users/lucas/DMDomain/data/ontology.owl#Model",
+         "id":         "http:         //localhost:8080         /wings-portal/export/users/lucas/DMDomain/components/library.owl#DTClassifier_model"
+      },
+      {
+         "dimensionality":0,
+         "prefix":"-T",
+         "isParam":False,
+         "role":"testData",
+         "type":         "http:         //localhost:8080         /wings-portal/export/users/lucas/DMDomain/data/ontology.owl#Instance",
+         "id":         "http:         //localhost:8080         /wings-portal/export/users/lucas/DMDomain/components/library.owl#DTClassifier_testData"
+      },
+      {
+         "dimensionality":0,
+         "paramDefaultValue":0,
+         "prefix":"-c",
+         "isParam":True,
+         "role":"classIndex",
+         "type":         "http://www.w3.org/2001/XMLSchema#integer",
+         "id":         "http:         //localhost:8080         /wings-portal/export/users/lucas/DMDomain/components/library.owl#DTClassifier_classIndex"
+      }
+   ],
+   "requirement":{
+      "softwareIds":[
+
+      ],
+      "storageGB":0.0,
+      "need64bit":False,
+      "memoryGB":0.0
+   },
+   "rules":[
+      "      [
+         invalidityDTClassifiersCantConsumeBayesModels:         print(Firing invalidityDTClassifiersCantConsumeBayesModels) (?c rdf:         type acdom:         DTClassifierClass) (?c ac:         hasInput ?idv) (?idv rdf:         type dcdom:         BayesModel) -> (?c ac:         isInvalid "true"^^xsd:         boolean) print(Template is invalid because ?idv has rdf:type BayesModel and DTClassifiers cant consume BayesModels)
+      ]      "], "outputs": [{"dimensionality": 0, "prefix": "-O", "isParam": False, "role": "classification", "type": "http://localhost:8080/wings-portal/export/users/lucas/DMDomain/data/ontology.owl#DTClassification", "id": "http://localhost:8080/wings-portal/export/users/lucas/DMDomain/components/library.owl#DTClassifier_classification"}], "inheritedRules": ["      [
+         instancesThatAreNotDiscreteAreContinuous:         print(Firing instancesThatAreNotDiscreteAreContinuous) (?x dcdom:         isDiscrete "false"^^xsd:         boolean) (?x rdf:         type dcdom:         Instance) -> (?x rdf:         type dcdom:         ContinuousInstance) print(Setting ?x rdf:type to Instance because ?x is discrete)
+      ]      ", "      [
+         continuousInstancesAreNotDiscrete:         print(Firing continuousInstancesAreNotDiscrete) (?x rdf:         type dcdom:         ContinuousInstance) -> (?x dcdom:         isDiscrete "false"^^xsd:         boolean) print(Setting ?x dcdom:isDiscrete false because ?x is ContinuousInstance)
+      ]      ", "      [
+         discreteInstancesAreDiscrete:         print(Firing discreteInstancesAreDiscrete) (?x rdf:         type dcdom:         DiscreteInstance) -> (?x dcdom:         isDiscrete "true"^^xsd:         boolean) print(Setting ?x dcdom:isDiscrete true because ?x is DiscreteInstance)
+      ]      ", "      [
+         forwardClassifierTransferNumberOfInstances:         print(Firing forwardClassifierTransferNumberOfInstances) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasOutput ?odv) (?odv ac:         hasArgumentID "classification") (?c ac:         hasInput ?idvdata) (?idvdata ac:         hasArgumentID "testData") (?idvdata dcdom:         hasNumberOfInstances ?val) -> (?odv dcdom:         hasNumberOfInstances ?val) print(Setting dcdom:hasNumberOfInstances for ?odv to ?val for ?c)
+      ]      ", "      [
+         backwardClassifierModelAndTestDataHaveSameDomain:         print(Firing backwardClassifierModelAndTestDataHaveSameDomain) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?c ac:         hasInput ?idvdata) (?idvdata ac:         hasArgumentID "testData") noValue(?idvmodel dcdom:         hasDomain) noValue(?idvdata dcdom:         hasDomain) uriConcat(?idvmodel "_domain" ?dom) -> (?idvmodel dcdom:         hasDomain ?dom) (?idvdata dcdom:hasDomain ?dom) print(Setting domain of ?idvmodel and ?idvdata to ?dom because both inputs to the Classifier should be from the same domain)
+      ]      ", "      [
+         invalidityClassifierClassIndexConsistent:         print(Firing invalidityClassifierClassIndexConsistent) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasOutput ?odv) (?odv ac:         hasArgumentID "classification") (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?c ac:         hasInput ?idvdata) (?idvdata ac:         hasArgumentID "testData") (?idvmodel dcdom:         hasClassIndex ?val1) (?idvdata dcdom:         hasClassIndex ?val2) notEqual(?val1 ?val2) -> (?c ac:         isInvalid "true"^^xsd:         boolean) print(ERROR:Template is invalid because ?idvmodel hasClassIndex ?val1 and ?idvdata hasClassIndex ?val2 are not equal.)
+      ]      ", "      [
+         backwardClassifierTransferMissingValues:         print(Firing backwardClassifierTransferMissingValues) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasOutput ?odv) (?odv ac:         hasArgumentID "classification") (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?c ac:         hasInput ?idvdata) (?idvdata ac:         hasArgumentID "testData") (?odv dcdom:         hasMissingValues ?val) -> (?idvmodel dcdom:hasMissingValues ?val) print(Setting hasMissingValues of Classifier input model ?idvmodel to ?val because the hasMissingValues of ?odv is ?val)
+      ]      ", "      [
+         forwardClassifierTransferHasDomain:         print(Firing forwardClassifierTransferHasDomain) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasOutput ?odv) (?odv ac:         hasArgumentID "classification") (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?idvmodel dcdom:         hasDomain ?val) -> (?idvdata dcdom:         hasDomain ?val) print(Setting dcdom:hasDomain for ?odv to ?val for ?c)
+      ]      ", "      [
+         invalidityClassifierAreaConsistent:         print(Firing invalidityClassifierAreaConsistent) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?c ac:         hasInput ?idvdata) (?idvdata ac:         hasArgumentID "testData") (?idvmodel dcdom:         hasArea ?val1) (?idvdata dcdom:         hasArea ?val2) notEqual(?val1 ?val2) -> (?c ac:         isInvalid "true"^^xsd:         boolean) print(ERROR:Template is invalid because ?idvmodel hasArea ?val1 and ?idvdata hasArea ?val2 are not equal.)
+      ]      ", "      [
+         forwardClassifierTransferNumberOfBins:         print(Firing forwardClassifierTransferNumberOfBins) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasOutput ?odv) (?odv ac:         hasArgumentID "classification") (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?idvmodel dcdom:         hasNumberOfBins ?val) (?idvdata dcdom:         hasNumberOfBins ?val) -> (?odv dcdom:         hasNumberOfBins ?val) print(Setting dcdom:hasNumberOfBins for ?odv to ?val for ?c)
+      ]      ", "      [
+         forwardClassifierTransferHasMissingValues:         print(Firing forwardClassifierTransferHasMissingValues) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasOutput ?odv) (?odv ac:         hasArgumentID "classification") (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?idvmodel dcdom:         hasMissingValues ?val) -> (?odv dcdom:         hasMissingValues ?val) print(Setting dcdom:hasMissingValues for ?odv to ?val for ?c)
+      ]      ", "      [
+         parameterClassIndexDefaultClassifier:         print(firing parameterClassIndexDefaultClassifier) (? rdf:         type acdom:         ClassifierClass) (?c ac:         hasInput ?idv) (?idv ac:         hasArgumentID "testData") (?c ac:         hasInput ?ipv) (?ipv ac:         hasArgumentID "classIndex") (?idv dcdom:         hasClassIndex ?ci) -> (?ipv ac:hasValue ?ci) print(Setting classIndex of Discretize to ?ci because the ?idv has ?ci)
+      ]      ", "      [
+         backwardClassifierTransferNumberOfBins:         print(Firing backwardClassifierTransferNumberOfBins) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasOutput ?odv) (?odv ac:         hasArgumentID "classification") (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?c ac:         hasInput ?idvdata) (?idvdata ac:         hasArgumentID "testData") (?odv dcdom:         hasNumberOfBins ?val) -> (?idvmodel dcdom:         hasNumberOfBins ?val) (?idvdata dcdom:hasNumberOfBins ?val) print(Setting hasNumberOfBins of Classifier input model ?idvmodel to ?val because the hasNumberOfBins of ?odv is ?val)
+      ]      ", "      [
+         backwardClassifierTransferIsDiscrete:         print(Firing backwardClassifierTransferIsDiscrete) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasOutput ?odv) (?odv ac:         hasArgumentID "classification") (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?c ac:         hasInput ?idvdata) (?idvdata ac:         hasArgumentID "testData") (?odv dcdom:         isDiscrete ?val) -> (?idvmodel dcdom:         isDiscrete ?val) (?idvdata dcdom:isDiscrete ?val) print(Setting isDiscrete of Classifier inputs ?idvmodel and ?idvdata to ?val because the isDiscrete of ?odv is ?val)
+      ]      ", "      [
+         backwardClassifierTransferNumberOfClasses:         print(Firing backwardClassifierTransferNumberOfClasses) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasOutput ?odv) (?odv ac:         hasArgumentID "classification") (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?c ac:         hasInput ?idvdata) (?idvdata ac:         hasArgumentID "testData") (?odv dcdom:         hasNumberOfClasses ?val) -> (?idvmodel dcdom:hasNumberOfClasses ?val) print(Setting hasNumberOfClasses of Classifier input model ?idvmodel to ?val because the hasNumberOfClasses of ?odv is ?val)
+      ]      ", "      [
+         invalidityClassifierDomainConsistent:         print(Firing invalidityClassifierDomainConsistent) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?c ac:         hasInput ?idvdata) (?idvdata ac:         hasArgumentID "testData") (?idvmodel dcdom:         hasDomain ?val1) (?idvdata dcdom:         hasDomain ?val2) notEqual(?val1 ?val2) -> (?c ac:         isInvalid "true"^^xsd:         boolean) print(ERROR:Template is invalid because ?idvmodel hasDomain ?val1 and ?idvdata hasDomain ?val2 are not equal.)
+      ]      ", "      [
+         invalidityClassifierNumberOfBinsConsistent:         print(Firing invalidityClassifierNumberOfBinsConsistent) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?c ac:         hasInput ?idvdata) (?idvdata ac:         hasArgumentID "testData") (?idvmodel dcdom:         hasNumberOfBins ?val1) (?idvdata dcdom:         hasNumberOfBins ?val2) notEqual(?val1 ?val2) -> (?c ac:         isInvalid "true"^^xsd:         boolean) print(ERROR:Template is invalid because ?idvmodel hasNumberOfBins ?val1 and ?idvdata hasNumberOfBins ?val2 are not equal.)
+      ]      ", "      [
+         backwardClassifierTransferClassIndex:         print(Firing backwardClassifierTransferClassIndex) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasOutput ?odv) (?odv ac:         hasArgumentID "classification") (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?c ac:         hasInput ?idvdata) (?idvdata ac:         hasArgumentID "testData") (?odv dcdom:         hasClassIndex ?val) -> (?idvmodel dcdom:hasClassIndex ?val) print(Setting hasClassIndex of Classifier input model ?idvmodel to ?val because the hasClassIndex of ?odv is ?val)
+      ]      ", "      [
+         forwardClassifierDataMetricsTransfer:         print(Firing forwardClassifierDataMetricsTransfer) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasOutput ?odv) (?odv ac:         hasArgumentID "classification") (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?c ac:         hasInput ?idvdata) (?idvdata ac:         hasArgumentID "testData") (?idvmodel dcdom:         isDiscrete ?val) (?idvdata dcdom:         isDiscrete ?val) -> (?odv dcdom:         isDiscrete ?val) print(Transferring dc:hasDataMetrics forward for ?c)
+      ]      ", "      [
+         backwardClassifierModelAndTestDataHaveSameNumBins:         print(Firing backwardClassifierModelAndTestDataHaveSameNumBins) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?c ac:         hasInput ?idvdata) (?idvdata ac:         hasArgumentID "testData") noValue(?idvmodel dcdom:         hasNumberOfBins) noValue(?idvdata dcdom:         hasNumberOfBins) uriConcat(?idvmodel "_numBins" ?numBins) -> (?idvmodel dcdom:         hasNumberOfBins ?numBins) (?idvdata dcdom:hasNumberOfBins ?numBins) print(Setting numBins of ?idvmodel and ?idvdata to ?numBins because both inputs to the Classifier should have the same number of bins)
+      ]      ", "      [
+         forwardClassifierTransferNumberOfClasses:         print(Firing forwardClassifierTransferNumberOfClasses) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasOutput ?odv) (?odv ac:         hasArgumentID "classification") (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?c ac:         hasInput ?idvdata) (?idvdata ac:         hasArgumentID "testData") (?idvmodel dcdom:         hasNumberOfClasses ?val) (?idvdata dcdom:         hasNumberOfClasses ?val) -> (?odv dcdom:         hasNumberOfClasses ?val) print(Setting dcdom:hasNumberOfClasses for ?odv to ?val for ?c)
+      ]      ", "      [
+         backwardClassifierModelAndTestDataHaveSameArea:         print(Firing backwardClassifierModelAndTestDataHaveSameArea) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?c ac:         hasInput ?idvdata) (?idvdata ac:         hasArgumentID "testData") noValue(?idvmodel dcdom:         hasArea) noValue(?idvdata dcdom:         hasArea) uriConcat(?idvmodel "_area" ?area) -> (?idvmodel dcdom:         hasArea ?area) (?idvdata dcdom:hasArea ?area) print(Setting area of ?idvmodel and ?idvdata to ?area because both inputs to the Classifier should be from the same area)
+      ]      ", "      [
+         backwardClassifierModelAndTestDataHaveSameDiscreteness:         print(Firing backwardClassifierModelAndTestDataHaveSameDiscreteness) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?c ac:         hasInput ?idvdata) (?idvdata ac:         hasArgumentID "testData") noValue(?idvmodel dcdom:         isDiscrete) noValue(?idvdata dcdom:         isDiscrete) uriConcat(?idvmodel "_isDiscrete" ?isDiscrete) -> (?idvmodel dcdom:         isDiscrete ?isDiscrete) (?idvdata dcdom:isDiscrete ?isDiscrete) print(Setting discreteness of ?idvmodel and ?idvdata to ?isDiscrete because both inputs to the Classifier should have the same discreteness)
+      ]      ", "      [
+         forwardClassifierMetricsTransfer:         print(Firing forwardClassifierMetricsTransfer) (?c rdf:         type acdom:         ClassifierClass) (?c ac:         hasOutput ?odv) (?odv ac:         hasArgumentID "classification") (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?c ac:         hasInput ?idvdata) (?idvdata ac:         hasArgumentID "testData") (?idvmodel ?p ?val) (?idvdata ?p ?val) (?p rdfs:         subPropertyOf dc:         hasMetrics) -> (?odv ?p ?val) print(Transferring dc:hasMetrics forward for ?c)
+      ]      "
+   ],
+   "type":1,
+   "id":   "http:   //localhost:8080   /wings-portal/export/users/lucas/DMDomain/components/library.owl#DTClassifier"
+}

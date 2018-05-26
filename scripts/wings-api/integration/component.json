@@ -1,0 +1,60 @@
+{
+   "inputs":[
+      {
+         "dimensionality":0,
+         "paramDefaultValue":0,
+         "prefix":"-c",
+         "isParam":True,
+         "role":"classIndex",
+         "type":         "http://www.w3.org/2001/XMLSchema#integer",
+         "id":         "http:         //localhost:8080         /wings-portal/export/users/lucas/DMDomain/components/library.owl#NaiveBayesClassifier_classIndex"
+      },
+      {
+         "dimensionality":0,
+         "prefix":"-l",
+         "isParam":False,
+         "role":"model",
+         "type":         "http:         //localhost:8080         /wings-portal/export/users/lucas/DMDomain/data/ontology.owl#Model",
+         "id":         "http:         //localhost:8080         /wings-portal/export/users/lucas/DMDomain/components/library.owl#NaiveBayesClassifier_model"
+      },
+      {
+         "dimensionality":0,
+         "prefix":"-T",
+         "isParam":False,
+         "role":"testData",
+         "type":         "http:         //localhost:8080         /wings-portal/export/users/lucas/DMDomain/data/ontology.owl#Instance",
+         "id":         "http:         //localhost:8080         /wings-portal/export/users/lucas/DMDomain/components/library.owl#NaiveBayesClassifier_testData"
+      }
+   ],
+   "requirement":{
+      "softwareIds":[
+
+      ],
+      "storageGB":0.0,
+      "need64bit":False,
+      "memoryGB":0.0
+   },
+   "rules":[
+
+   ],
+   "outputs":[
+      {
+         "dimensionality":0,
+         "prefix":"-O",
+         "isParam":False,
+         "role":"classification",
+         "type":         "http:         //localhost:8080         /wings-portal/export/users/lucas/DMDomain/data/ontology.owl#BayesClassification",
+         "id":         "http:         //localhost:8080         /wings-portal/export/users/lucas/DMDomain/components/library.owl#NaiveBayesClassifier_classification"
+      }
+   ],
+   "inheritedRules":[
+      "      [
+         backwardBayesClassifierRequiresDiscrete:         print(Firing backwardBayesClassifierRequiresDiscrete) (?c rdf:         type acdom:         BayesClassifierClass) (?c ac:         hasInput ?idvmodel) (?idvmodel ac:         hasArgumentID "model") (?c ac:         hasInput ?idvdata) (?idvdata ac:         hasArgumentID "testData") -> (?idvdata dcdom:         isDiscrete "true"^^xsd:         boolean) (?idvmodel dcdom:         isDiscrete "true"^^xsd:boolean) print(Setting isDiscrete of BayesClassifier inputs ?idvmodel and ?idvdata to false)
+      ]      ", "      [
+         invalidityBayesClassifiersCantConsumeDTModels:         print(Firing invalidityBayesClassifiersCantConsumeDTModels) (?c rdf:         type acdom:         BayesClassifierClass) (?c ac:         hasInput ?idv) (?idv rdf:         type dcdom:         DTModel) -> (?c ac:         isInvalid "true"^^xsd:         boolean) print(ERROR:         Template is invalid because ?idv has rdf:type DTModel and BayesClassifiers cant consume DTModels)
+      ]      "
+   ],
+   "location":"/home/lucas/.wings/storage/users/lucas/DMDomain/code/library/NaiveBayesClassifier",
+   "type":2,
+   "id":   "http:   //localhost:8080   /wings-portal/export/users/lucas/DMDomain/components/library.owl#NaiveBayesClassifier"
+}

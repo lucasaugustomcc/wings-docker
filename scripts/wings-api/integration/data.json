@@ -1,0 +1,648 @@
+{
+   "item":{
+      "type":1,
+      "id":      "http://www.wings-workflows.org/ontology/data.owl#DataObject"
+   },
+   "children":[
+      {
+         "item":{
+            "type":1,
+            "id":            "http:            //localhost:8080            /wings-portal/export/users/lucas/DMDomain/data/ontology.owl#Instance"
+         },
+         "children":[
+            {
+               "item":{
+                  "type":1,
+                  "id":                  "http:                  //localhost:8080                  /wings-portal/export/users/lucas/DMDomain/data/ontology.owl#ContinuousInstance"
+               },
+               "children":[
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#cpu-2010-05-04-110857-1000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#segment-2010-05-04-111409-10000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#iris-2010-05-04-110944-1000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#labor-2010-05-04-111016-100.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#segment-2010-05-04-111430-10000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#cpu-2010-05-04-110907-10000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#iris-2010-05-04-110938-1000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#weather-2010-05-04-111223-100.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#labor-2010-05-04-111026-1000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#iris-2010-05-04-110950-10000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#segment-2010-05-04-111403-1000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#iris-2010-05-04-110933-100.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#segment-2010-05-04-111352-100.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#weather-2010-05-04-111233-1000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#weather-2010-05-04-111251-10000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#labor_2010-05-04-111011-100-randomized.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#iris-2010-05-04-110928-100.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#cpu-2010-05-04-110915-10000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#segment-2010-05-04-111347-100.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#segment-2010-05-04-111357-1000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#cpu-2010-05-04-110851-100.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#weather-2010-05-04-111228-100.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#cpu-2010-05-04-110902-1000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#weather-2010-05-04-111243-10000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#labor-2010-05-04-111011-100.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#labor-2010-05-04-111021-1000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#labor-2010-05-04-111032-10000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#weather-2010-05-04-111238-1000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#cpu-2010-05-04-110846-100.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#iris-2010-05-04-110958-10000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#labor-2010-05-04-111046-10000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  }
+               ]
+            },
+            {
+               "item":{
+                  "type":1,
+                  "id":                  "http:                  //localhost:8080                  /wings-portal/export/users/lucas/DMDomain/data/ontology.owl#DiscreteInstance"
+               },
+               "children":[
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#contact-lenses-2010-05-04-110834-10000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#soybean-2010-05-04-111109-100.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#contact-lenses-2010-05-04-110821-1000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#weather-nominal-2010-05-04-111304-100.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#contact-lenses-2010-05-04-110810-100.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#contact-lenses-2010-05-04-110815-1000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#contact-lenses-2010-05-04-110826-10000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#soybean-2010-05-04-111127-10000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#weather-nominal-2010-05-04-111332-10000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#contact_lenses-2010-05-04-110805-100-randomized.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#weather-nominal-2010-05-04-111314-1000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#soybean-2010-05-04-111104-100.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#contact-lenses-2010-05-04-110805-100.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#soybean-2010-05-04-111120-1000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#weather-nominal-2010-05-04-111309-100.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#soybean-2010-05-04-111114-1000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#cpu_2010-05-04-110907-10000-discrete-4-bins.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#weather-nominal-2010-05-04-111324-10000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#weather-nominal-2010-05-04-111319-1000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#soybean-2010-05-04-111157-10000.arff"
+                     },
+                     "children":[
+
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "item":{
+            "type":1,
+            "id":            "http:            //localhost:8080            /wings-portal/export/users/lucas/DMDomain/data/ontology.owl#Model"
+         },
+         "children":[
+            {
+               "item":{
+                  "type":1,
+                  "id":                  "http:                  //localhost:8080                  /wings-portal/export/users/lucas/DMDomain/data/ontology.owl#BayesModel"
+               },
+               "children":[
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#weather_nominal-2010-05-04-111319-1000.model"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#case_82-test.model"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#delete_me-abstract-with-nb-selected.model"
+                     },
+                     "children":[
+
+                     ]
+                  }
+               ]
+            },
+            {
+               "item":{
+                  "type":1,
+                  "id":                  "http:                  //localhost:8080                  /wings-portal/export/users/lucas/DMDomain/data/ontology.owl#DTModel"
+               },
+               "children":[
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#db29bf2ef85bf57c11c85c1dff196a5f"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#contact_lenses-2010-05-04-1110805-100-randomized.model"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#iris_2010-05-04-110933-100-j48.model"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#segment_2010-05-04-111347-100-j48.model"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#case_82-wf-case82.model"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#case_82-wf-case79.model"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#iris_2010-05-04-110938-1000-id3.model"
+                     },
+                     "children":[
+
+                     ]
+                  },
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#iris_2010-05-04-110944-1000-j48.model"
+                     },
+                     "children":[
+
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "item":{
+            "type":1,
+            "id":            "http:            //localhost:8080            /wings-portal/export/users/lucas/DMDomain/data/ontology.owl#Classification"
+         },
+         "children":[
+            {
+               "item":{
+                  "type":1,
+                  "id":                  "http:                  //localhost:8080                  /wings-portal/export/users/lucas/DMDomain/data/ontology.owl#BayesClassification"
+               },
+               "children":[
+                  {
+                     "item":{
+                        "type":2,
+                        "id":                        "http:                        //localhost:8080                        /wings-portal/export/users/lucas/DMDomain/data/library.owl#case_82-test.classification"
+                     },
+                     "children":[
+
+                     ]
+                  }
+               ]
+            },
+            {
+               "item":{
+                  "type":1,
+                  "id":                  "http:                  //localhost:8080                  /wings-portal/export/users/lucas/DMDomain/data/ontology.owl#DTClassification"
+               },
+               "children":[
+
+               ]
+            }
+         ]
+      }
+   ]
+}

@@ -70,6 +70,7 @@ class ManageComponent(UserOperation):
 	def save_component(self, cid, metadata):
 		jsonobj = self._modify_component_json(cid, metadata)
 		jsonobj["type"] = 2
+		print json.dumps(jsonobj)
 		postdata = { 'load_concrete': True, 'component_json': json.dumps(jsonobj) }
 		resp = self.session.post( self.get_request_url() + 'components/saveComponentJSON', postdata )
 		assert resp.content == "OK"

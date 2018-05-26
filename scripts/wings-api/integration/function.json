@@ -1,0 +1,800 @@
+{
+   "name":"Function-GAuvALBVGoBh",
+   "value":{
+      "http://ontosoft.org/software#usesAlgorithm":[
+         {
+            "name":"Algorithm-bzq4ZRqfxiyT",
+            "value":"",
+            "label":"",
+            "id":            "http:            //localhost:8080            /ontosoft-server/software/enumerations#Algorithm-bzq4ZRqfxiyT",
+            "type":            "http://ontosoft.org/software#Algorithm",
+            "@type":"EnumerationEntity"
+         }
+      ],
+      "http://ontosoft.org/software#hasFunctionality":[
+         {
+            "name":"Functionality-WOrmytungizW",
+            "value":"Format Conversion",
+            "label":"Format Conversion",
+            "id":            "http:            //localhost:8080            /ontosoft-server/software/enumerations#Functionality-WOrmytungizW",
+            "type":            "http://ontosoft.org/software#Functionality",
+            "@type":"EnumerationEntity"
+         }
+      ],
+      "http://ontosoft.org/software#hasOutput":[
+         {
+            "name":"Function-JSsEgejctGAE-kDBae9GsDUnR",
+            "value":{
+               "http://ontosoft.org/software#hasOutputDataType":[
+                  {
+                     "name":"DataType-30vlr0sBGRSg",
+                     "value":"Text",
+                     "label":"Text",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataType-30vlr0sBGRSg",
+                     "type":                     "http://ontosoft.org/software#DataType",
+                     "@type":"EnumerationEntity"
+                  },
+                  {
+                     "name":"DataType-6YAG4A5wt4tJ",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataType-6YAG4A5wt4tJ",
+                     "type":                     "http://ontosoft.org/software#DataType",
+                     "@type":"EnumerationEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputFileArgument":[
+
+               ],
+               "http://ontosoft.org/software#hasOutputDescription":[
+                  {
+                     "name":"Function-JSsEgejctGAE-kDBae9GsDUnR-2xk8CDQBnnHk",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#Function-JSsEgejctGAE-kDBae9GsDUnR-2xk8CDQBnnHk",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasOutputName":[
+                  {
+                     "name":"Function-JSsEgejctGAE-kDBae9GsDUnR-mT6azFuCak5",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#Function-JSsEgejctGAE-kDBae9GsDUnR-mT6azFuCak5",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasOutputArgument":[
+
+               ],
+               "http://ontosoft.org/software#hasOutputDataFormat":[
+                  {
+                     "name":"DataFormat-WMM6dIIrzWpc",
+                     "value":"ARFF",
+                     "label":"ARFF",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataFormat-WMM6dIIrzWpc",
+                     "type":                     "http://ontosoft.org/software#DataFormat",
+                     "@type":"EnumerationEntity"
+                  },
+                  {
+                     "name":"DataFormat-ouQhrf4f4Jno",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataFormat-ouQhrf4f4Jno",
+                     "type":                     "http://ontosoft.org/software#DataFormat",
+                     "@type":"EnumerationEntity"
+                  }
+               ]
+            },
+            "label":"",
+            "id":            "http:            //localhost:8080            /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#Function-JSsEgejctGAE-kDBae9GsDUnR",
+            "type":            "http://ontosoft.org/software#Output",
+            "@type":"ComplexEntity"
+         }
+      ],
+      "http://ontosoft.org/software#hasFunctionInvocation":[
+         {
+            "name":"Function-JSsEgejctGAE-W985IRyz0rtD",
+            "value":"java weka.core.converters.CSVLoader",
+            "label":"",
+            "id":"http://localhost:8080/ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#Function-JSsEgejctGAE-W985IRyz0rtD",
+            "type":"http://ontosoft.org/software#TextEntity",
+            "@type":"TextEntity"
+         }
+      ],
+      "http://ontosoft.org/software#hasInputParameter":[
+         {
+            "name":"Function-JSsEgejctGAE-ZSr7qjykWcBl",
+            "value":{
+               "http://ontosoft.org/software#hasInputParameterArgument":[
+
+               ],
+               "http://ontosoft.org/software#hasInputParameterDataType":[
+                  {
+                     "name":"DataType-ZsBppvogr76q",
+                     "value":"string",
+                     "label":"Date",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataType-ZsBppvogr76q",
+                     "type":                     "http://ontosoft.org/software#DataType",
+                     "@type":"EnumerationEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterDescription":[
+                  {
+                     "name":"Function-JSsEgejctGAE-ZSr7qjykWcBl-iEYrZMS8z6ia",
+                     "value":"date format",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#Function-JSsEgejctGAE-ZSr7qjykWcBl-iEYrZMS8z6ia",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterName":[
+                  {
+                     "name":"Function-JSsEgejctGAE-ZSr7qjykWcBl-vf0nik9qGo4D",
+                     "value":"format",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#Function-JSsEgejctGAE-ZSr7qjykWcBl-vf0nik9qGo4D",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterDefaultValue":[
+                  {
+                     "name":"Function-JSsEgejctGAE-ZSr7qjykWcBl-h202GlwmoKrf",
+                     "value":"YYYY-mm-dd",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#Function-JSsEgejctGAE-ZSr7qjykWcBl-h202GlwmoKrf",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#isRequiredInputParameter":[
+
+               ],
+               "http://ontosoft.org/software#hasInputParameterDataFormat":[
+                  {
+                     "name":"DataFormat-vmFyjCvajHOz",
+                     "value":"String",
+                     "label":"String",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataFormat-vmFyjCvajHOz",
+                     "type":                     "http://ontosoft.org/software#DataFormat",
+                     "@type":"EnumerationEntity"
+                  }
+               ]
+            },
+            "label":"",
+            "id":            "http:            //localhost:8080            /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#Function-JSsEgejctGAE-ZSr7qjykWcBl",
+            "type":            "http://ontosoft.org/software#InputParameter",
+            "@type":"ComplexEntity"
+         },
+         {
+            "name":"InputParameter-huQUvccggJ3g",
+            "value":{
+               "http://ontosoft.org/software#hasInputParameterArgument":[
+
+               ],
+               "http://ontosoft.org/software#hasInputParameterDataType":[
+                  {
+                     "name":"DataType-VcD9sYtnXWCQ",
+                     "value":"String",
+                     "label":"String",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataType-VcD9sYtnXWCQ",
+                     "type":                     "http://ontosoft.org/software#DataType",
+                     "@type":"EnumerationEntity"
+                  },
+                  {
+                     "name":"DataType-6YAG4A5wt4tJ",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataType-6YAG4A5wt4tJ",
+                     "type":                     "http://ontosoft.org/software#DataType",
+                     "@type":"EnumerationEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterDescription":[
+                  {
+                     "name":"InputParameter-huQUvccggJ3g-PVxH3iYtSfW7",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-huQUvccggJ3g-PVxH3iYtSfW7",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterName":[
+                  {
+                     "name":"InputParameter-huQUvccggJ3g-Gop9xBPpZfFM",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-huQUvccggJ3g-Gop9xBPpZfFM",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterDefaultValue":[
+                  {
+                     "name":"InputParameter-huQUvccggJ3g-Bjll9cox0uNP",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-huQUvccggJ3g-Bjll9cox0uNP",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#isRequiredInputParameter":[
+
+               ],
+               "http://ontosoft.org/software#hasInputParameterDataFormat":[
+                  {
+                     "name":"DataFormat-vmFyjCvajHOz",
+                     "value":"String",
+                     "label":"String",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataFormat-vmFyjCvajHOz",
+                     "type":                     "http://ontosoft.org/software#DataFormat",
+                     "@type":"EnumerationEntity"
+                  },
+                  {
+                     "name":"DataFormat-ouQhrf4f4Jno",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataFormat-ouQhrf4f4Jno",
+                     "type":                     "http://ontosoft.org/software#DataFormat",
+                     "@type":"EnumerationEntity"
+                  }
+               ]
+            },
+            "label":"",
+            "id":            "http:            //localhost:8080            /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-huQUvccggJ3g",
+            "type":            "http://ontosoft.org/software#InputParameter",
+            "@type":"ComplexEntity"
+         },
+         {
+            "name":"InputParameter-jkFiFuKtdsgC",
+            "value":{
+               "http://ontosoft.org/software#hasInputParameterArgument":[
+
+               ],
+               "http://ontosoft.org/software#hasInputParameterDataType":[
+                  {
+                     "name":"DataType-6YAG4A5wt4tJ",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataType-6YAG4A5wt4tJ",
+                     "type":                     "http://ontosoft.org/software#DataType",
+                     "@type":"EnumerationEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterDescription":[
+                  {
+                     "name":"InputParameter-jkFiFuKtdsgC-OJYHnV7hxw88",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-jkFiFuKtdsgC-OJYHnV7hxw88",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterName":[
+                  {
+                     "name":"InputParameter-jkFiFuKtdsgC-ULDVv8gNLXY5",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-jkFiFuKtdsgC-ULDVv8gNLXY5",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterDefaultValue":[
+                  {
+                     "name":"InputParameter-jkFiFuKtdsgC-jhciK4frgyBl",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-jkFiFuKtdsgC-jhciK4frgyBl",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#isRequiredInputParameter":[
+
+               ],
+               "http://ontosoft.org/software#hasInputParameterDataFormat":[
+                  {
+                     "name":"DataFormat-ouQhrf4f4Jno",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataFormat-ouQhrf4f4Jno",
+                     "type":                     "http://ontosoft.org/software#DataFormat",
+                     "@type":"EnumerationEntity"
+                  }
+               ]
+            },
+            "label":"",
+            "id":            "http:            //localhost:8080            /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-jkFiFuKtdsgC",
+            "type":            "http://ontosoft.org/software#InputParameter",
+            "@type":"ComplexEntity"
+         },
+         {
+            "name":"InputParameter-QFlMIt8tSh9t",
+            "value":{
+               "http://ontosoft.org/software#hasInputParameterArgument":[
+
+               ],
+               "http://ontosoft.org/software#hasInputParameterDataType":[
+                  {
+                     "name":"DataType-6YAG4A5wt4tJ",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataType-6YAG4A5wt4tJ",
+                     "type":                     "http://ontosoft.org/software#DataType",
+                     "@type":"EnumerationEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterDescription":[
+                  {
+                     "name":"InputParameter-QFlMIt8tSh9t-401wOhVcD6q",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-QFlMIt8tSh9t-401wOhVcD6q",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterName":[
+                  {
+                     "name":"InputParameter-QFlMIt8tSh9t-hAmbubpCP2gd",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-QFlMIt8tSh9t-hAmbubpCP2gd",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterDefaultValue":[
+                  {
+                     "name":"InputParameter-QFlMIt8tSh9t-reEMm4OaEs7N",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-QFlMIt8tSh9t-reEMm4OaEs7N",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#isRequiredInputParameter":[
+
+               ],
+               "http://ontosoft.org/software#hasInputParameterDataFormat":[
+                  {
+                     "name":"DataFormat-ouQhrf4f4Jno",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataFormat-ouQhrf4f4Jno",
+                     "type":                     "http://ontosoft.org/software#DataFormat",
+                     "@type":"EnumerationEntity"
+                  }
+               ]
+            },
+            "label":"",
+            "id":            "http:            //localhost:8080            /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-QFlMIt8tSh9t",
+            "type":            "http://ontosoft.org/software#InputParameter",
+            "@type":"ComplexEntity"
+         },
+         {
+            "name":"InputParameter-VyxH9pVOBFuz",
+            "value":{
+               "http://ontosoft.org/software#hasInputParameterArgument":[
+
+               ],
+               "http://ontosoft.org/software#hasInputParameterDataType":[
+                  {
+                     "name":"DataType-6YAG4A5wt4tJ",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataType-6YAG4A5wt4tJ",
+                     "type":                     "http://ontosoft.org/software#DataType",
+                     "@type":"EnumerationEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterDescription":[
+                  {
+                     "name":"InputParameter-VyxH9pVOBFuz-O6tQWCgi7Fkk",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-VyxH9pVOBFuz-O6tQWCgi7Fkk",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterName":[
+                  {
+                     "name":"InputParameter-VyxH9pVOBFuz-8lgxScpowmqO",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-VyxH9pVOBFuz-8lgxScpowmqO",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterDefaultValue":[
+                  {
+                     "name":"InputParameter-VyxH9pVOBFuz-1e63PNt6jgdi",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-VyxH9pVOBFuz-1e63PNt6jgdi",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#isRequiredInputParameter":[
+
+               ],
+               "http://ontosoft.org/software#hasInputParameterDataFormat":[
+                  {
+                     "name":"DataFormat-ouQhrf4f4Jno",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataFormat-ouQhrf4f4Jno",
+                     "type":                     "http://ontosoft.org/software#DataFormat",
+                     "@type":"EnumerationEntity"
+                  }
+               ]
+            },
+            "label":"",
+            "id":            "http:            //localhost:8080            /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-VyxH9pVOBFuz",
+            "type":            "http://ontosoft.org/software#InputParameter",
+            "@type":"ComplexEntity"
+         },
+         {
+            "name":"InputParameter-Jc0ZAQ9XfuGG",
+            "value":{
+               "http://ontosoft.org/software#hasInputParameterArgument":[
+
+               ],
+               "http://ontosoft.org/software#hasInputParameterDataType":[
+                  {
+                     "name":"DataType-6YAG4A5wt4tJ",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataType-6YAG4A5wt4tJ",
+                     "type":                     "http://ontosoft.org/software#DataType",
+                     "@type":"EnumerationEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterDescription":[
+                  {
+                     "name":"InputParameter-Jc0ZAQ9XfuGG-ndvIZoPzmyiZ",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-Jc0ZAQ9XfuGG-ndvIZoPzmyiZ",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterName":[
+                  {
+                     "name":"InputParameter-Jc0ZAQ9XfuGG-NREFX1x2suQ",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-Jc0ZAQ9XfuGG-NREFX1x2suQ",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterDefaultValue":[
+                  {
+                     "name":"InputParameter-Jc0ZAQ9XfuGG-0wcLh2I1a7xS",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-Jc0ZAQ9XfuGG-0wcLh2I1a7xS",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#isRequiredInputParameter":[
+
+               ],
+               "http://ontosoft.org/software#hasInputParameterDataFormat":[
+                  {
+                     "name":"DataFormat-ouQhrf4f4Jno",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataFormat-ouQhrf4f4Jno",
+                     "type":                     "http://ontosoft.org/software#DataFormat",
+                     "@type":"EnumerationEntity"
+                  }
+               ]
+            },
+            "label":"",
+            "id":            "http:            //localhost:8080            /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-Jc0ZAQ9XfuGG",
+            "type":            "http://ontosoft.org/software#InputParameter",
+            "@type":"ComplexEntity"
+         },
+         {
+            "name":"InputParameter-VPi5KjL7FOQn",
+            "value":{
+               "http://ontosoft.org/software#hasInputParameterArgument":[
+
+               ],
+               "http://ontosoft.org/software#hasInputParameterDataType":[
+                  {
+                     "name":"DataType-6YAG4A5wt4tJ",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataType-6YAG4A5wt4tJ",
+                     "type":                     "http://ontosoft.org/software#DataType",
+                     "@type":"EnumerationEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterDescription":[
+                  {
+                     "name":"InputParameter-VPi5KjL7FOQn-A0RF33X5qlz2",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-VPi5KjL7FOQn-A0RF33X5qlz2",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterName":[
+                  {
+                     "name":"InputParameter-VPi5KjL7FOQn-K8POwASI4fTi",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-VPi5KjL7FOQn-K8POwASI4fTi",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterDefaultValue":[
+                  {
+                     "name":"InputParameter-VPi5KjL7FOQn-H8pCzUjSYGu5",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-VPi5KjL7FOQn-H8pCzUjSYGu5",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#isRequiredInputParameter":[
+
+               ],
+               "http://ontosoft.org/software#hasInputParameterDataFormat":[
+                  {
+                     "name":"DataFormat-ouQhrf4f4Jno",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataFormat-ouQhrf4f4Jno",
+                     "type":                     "http://ontosoft.org/software#DataFormat",
+                     "@type":"EnumerationEntity"
+                  }
+               ]
+            },
+            "label":"",
+            "id":            "http:            //localhost:8080            /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-VPi5KjL7FOQn",
+            "type":            "http://ontosoft.org/software#InputParameter",
+            "@type":"ComplexEntity"
+         },
+         {
+            "name":"InputParameter-emOJhbyuIhbK",
+            "value":{
+               "http://ontosoft.org/software#hasInputParameterArgument":[
+
+               ],
+               "http://ontosoft.org/software#hasInputParameterDataType":[
+                  {
+                     "name":"DataType-6YAG4A5wt4tJ",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataType-6YAG4A5wt4tJ",
+                     "type":                     "http://ontosoft.org/software#DataType",
+                     "@type":"EnumerationEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterDescription":[
+                  {
+                     "name":"InputParameter-emOJhbyuIhbK-SVAGnYUiIHye",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-emOJhbyuIhbK-SVAGnYUiIHye",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterName":[
+                  {
+                     "name":"InputParameter-emOJhbyuIhbK-fw2xO526i5e7",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-emOJhbyuIhbK-fw2xO526i5e7",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterDefaultValue":[
+                  {
+                     "name":"InputParameter-emOJhbyuIhbK-ZGx1nSmyz5ok",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-emOJhbyuIhbK-ZGx1nSmyz5ok",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#isRequiredInputParameter":[
+
+               ],
+               "http://ontosoft.org/software#hasInputParameterDataFormat":[
+                  {
+                     "name":"DataFormat-ouQhrf4f4Jno",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataFormat-ouQhrf4f4Jno",
+                     "type":                     "http://ontosoft.org/software#DataFormat",
+                     "@type":"EnumerationEntity"
+                  }
+               ]
+            },
+            "label":"",
+            "id":            "http:            //localhost:8080            /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-emOJhbyuIhbK",
+            "type":            "http://ontosoft.org/software#InputParameter",
+            "@type":"ComplexEntity"
+         },
+         {
+            "name":"InputParameter-Mnp0l2UIctY4",
+            "value":{
+               "http://ontosoft.org/software#hasInputParameterArgument":[
+
+               ],
+               "http://ontosoft.org/software#hasInputParameterDataType":[
+                  {
+                     "name":"DataType-6YAG4A5wt4tJ",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataType-6YAG4A5wt4tJ",
+                     "type":                     "http://ontosoft.org/software#DataType",
+                     "@type":"EnumerationEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterDescription":[
+                  {
+                     "name":"InputParameter-Mnp0l2UIctY4-W32ZZ6aUetYo",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-Mnp0l2UIctY4-W32ZZ6aUetYo",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterName":[
+                  {
+                     "name":"InputParameter-Mnp0l2UIctY4-37z0GUB4JKTI",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-Mnp0l2UIctY4-37z0GUB4JKTI",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputParameterDefaultValue":[
+                  {
+                     "name":"InputParameter-Mnp0l2UIctY4-x5BkcB7rewoQ",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-Mnp0l2UIctY4-x5BkcB7rewoQ",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#isRequiredInputParameter":[
+
+               ],
+               "http://ontosoft.org/software#hasInputParameterDataFormat":[
+                  {
+                     "name":"DataFormat-ouQhrf4f4Jno",
+                     "value":"",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataFormat-ouQhrf4f4Jno",
+                     "type":                     "http://ontosoft.org/software#DataFormat",
+                     "@type":"EnumerationEntity"
+                  }
+               ]
+            },
+            "label":"",
+            "id":            "http:            //localhost:8080            /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#InputParameter-Mnp0l2UIctY4",
+            "type":            "http://ontosoft.org/software#InputParameter",
+            "@type":"ComplexEntity"
+         }
+      ],
+      "http://ontosoft.org/software#hasInputFile":[
+         {
+            "name":"Function-JSsEgejctGAE-ajocDWNhDE5S",
+            "value":{
+               "http://ontosoft.org/software#hasInputFileDataFormat":[
+                  {
+                     "name":"DataFormat-2XYgYnL9wUAD",
+                     "value":"CSV",
+                     "label":"CSV",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataFormat-2XYgYnL9wUAD",
+                     "type":                     "http://ontosoft.org/software#DataFormat",
+                     "@type":"EnumerationEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputFileDescription":[
+                  {
+                     "name":"Function-JSsEgejctGAE-ajocDWNhDE5S-KOoD9Pv6MYHq",
+                     "value":"file to be converterd",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#Function-JSsEgejctGAE-ajocDWNhDE5S-KOoD9Pv6MYHq",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputFileName":[
+                  {
+                     "name":"Function-JSsEgejctGAE-ajocDWNhDE5S-yeX82ERTWlZJ",
+                     "value":"csv-file",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#Function-JSsEgejctGAE-ajocDWNhDE5S-yeX82ERTWlZJ",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#isRequiredInputFile":[
+
+               ],
+               "http://ontosoft.org/software#hasInputFileDataType":[
+                  {
+                     "name":"DataType-30vlr0sBGRSg",
+                     "value":"Text",
+                     "label":"Text",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/enumerations#DataType-30vlr0sBGRSg",
+                     "type":                     "http://ontosoft.org/software#DataType",
+                     "@type":"EnumerationEntity"
+                  }
+               ],
+               "http://ontosoft.org/software#hasInputFileDefaultValue":[
+                  {
+                     "name":"Function-JSsEgejctGAE-ajocDWNhDE5S-xXEIPKEWRIkG",
+                     "value":"file1.txt",
+                     "label":"",
+                     "id":                     "http:                     //localhost:8080                     /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#Function-JSsEgejctGAE-ajocDWNhDE5S-xXEIPKEWRIkG",
+                     "type":                     "http://ontosoft.org/software#TextEntity",
+                     "@type":"TextEntity"
+                  }
+               ]
+            },
+            "label":"",
+            "id":            "http:            //localhost:8080            /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#Function-JSsEgejctGAE-ajocDWNhDE5S",
+            "type":            "http://ontosoft.org/software#InputFile",
+            "@type":"ComplexEntity"
+         }
+         
+      ],
+      "http://ontosoft.org/software#hasFunctionName":[
+         {
+            "name":"Function-JSsEgejctGAE-W985IRyz0rtD",
+            "value":"weka.core.converters.CSVLoader",
+            "label":"",
+            "id":            "http:            //localhost:8080            /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#Function-JSsEgejctGAE-W985IRyz0rtD",
+            "type":            "http://ontosoft.org/software#TextEntity",
+            "@type":"TextEntity"
+         }
+      ],
+      "http://ontosoft.org/software#hasFunctionDescription":[
+         {
+            "name":"Function-JSsEgejctGAE-XC4H8ZYMvc51",
+            "value":"Reads a CSV and writes a ARFF file",
+            "label":"",
+            "id":            "http:            //localhost:8080            /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#Function-JSsEgejctGAE-XC4H8ZYMvc51",
+            "type":            "http://ontosoft.org/software#TextEntity",
+            "@type":"TextEntity"
+         }
+      ]
+   },
+   "label":"",
+   "id":   "http:   //localhost:8080   /ontosoft-server/software/Software-QUrZXB1D5rlR/version/SoftwareVersion-0l00sGxRXUe1#Function-GAuvALBVGoBh",
+   "type":   "http://ontosoft.org/software#Function",
+   "@type":"SoftwareFunction"
+}

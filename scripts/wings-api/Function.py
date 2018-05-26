@@ -33,7 +33,7 @@ checkExitCode
 		jsonobj = {
 			"inputs":self.inputs,
 		   	"outputs":self.outputs,
-		   	"rulesText":self.getRules(),
+		   	"rulesText":"",
 		   	"requirement":{
 		      	"softwareIds":[
 
@@ -65,13 +65,13 @@ checkExitCode
 							obj['type'] = 'dcdom:' + type
 							managedata.new_data_type(type, None)
 						elif value == self.ontns + "hasInputFileDataFormat":
-							obj['type'] = input['value'][value][0]['value']
+							obj['format'] = input['value'][value][0]['value']
 						elif value == self.ontns + "hasInputFileArgument":
 							obj['prefix'] = input['value'][value][0]['value'] if len(input['value'][value]) > 0 else "-i"+str(i)
 						obj['dimensionality'] = 0
 						obj['isParam'] = False
 					if obj != {}:
-						managedata.add_type_properties(obj['type'], { 'hasDataFormat': 'Thing', 'hasDataType': 'Thing' })
+						managedata.add_type_properties(obj['type'], { 'hasDataFormat': 'Domain', 'hasDataType': 'Domain' })
 						if not 'prefix' in obj:
 							obj['prefix'] = "-i" + str(len(self.params)+1)
 						self.inputs.append(obj)
@@ -107,6 +107,8 @@ checkExitCode
 								obj = {}
 								break
 							obj['role'] = input['value'][value][0]['value']
+						elif value == self.ontns + "hasOutputDataFormat":
+							obj['format'] = input['value'][value][0]['value']
 						elif value == self.ontns + "hasOutputDataType":
 							type = input['value'][value][0]['value']
 							obj['type'] = 'dcdom:' + type
@@ -116,7 +118,7 @@ checkExitCode
 						obj['dimensionality'] = 0
 						obj['isParam'] = False
 					if obj != {}:
-						managedata.add_type_properties(obj['type'], { 'hasDataFormat': 'Thing', 'hasDataType': 'Thing' })
+						managedata.add_type_properties(obj['type'], { 'hasDataFormat': 'Domain', 'hasDataType': 'Domain' })
 						if not 'prefix' in obj:
 							obj['prefix'] = "-o" + str(len(self.outputs)+1)
 						self.outputs.append(obj)
@@ -129,10 +131,10 @@ checkExitCode
 				print(Firing checkDataTypeAndDataFormat) 
 				(?c rdf:type acdom:""" + self.name + """Class) 
 				(?c ac:hasInput ?idv)
-				(?idv ac:hasArgumentID '""" + self.inputs[0]['name'] + """')
+				(?idv ac:hasArgumentID '""" + self.inputs[0]['role'] + """')
 				(?idv dcdom:hasDataFormat ?format)
 				(?idv dcdom:hasDataType ?type)
-				notEqual(""" + self.inputs[0]['format'] + """ ?format)
+				notEqual(""" + self.inputs[1]['format'] + """ ?format)
 				notEqual(""" + self.inputs[0]['type'] + """ ?type) 
 					-> (?c ac:isInvalid "true"^^xsd:boolean) 
 				print(Template is invalid because ?idv has data type or format that """ + self.name + """ cannot consume BayesModels) 

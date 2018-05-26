@@ -1,0 +1,26 @@
+{
+  "id": "http://localhost:8080/wings-portal/export/users/lucas/DMDomain/components/library.owl#weka.core.converters.CSVLoader",
+  "type": 2,
+  "inputs": [
+    {
+      "role": "test2",
+      "type": "http://localhost:8080/wings-portal/export/users/lucas/DMDomain/data/ontology.owl#Text",
+      "prefix": "-i1",
+      "dimensionality": 0,
+      "isParam": false
+    }
+  ],
+  "outputs": [
+    
+  ],
+  "rulesText": null,
+  "location": "/home/lucas/.wings/storage/users/lucas/DMDomain/code/library/weka.core.converters.CSVLoader",
+  "requirement": {
+    "softwareIds": [
+      
+    ],
+    "memoryGB": "0",
+    "storageGB": "0",
+    "needs64bit": false
+  }
+}

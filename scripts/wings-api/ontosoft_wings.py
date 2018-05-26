@@ -14,7 +14,7 @@ ontns = "http://ontosoft.org/software#"
 
 #resp = requests.get( server + "/" + function )
 #data = resp.json()['value']
-with open("/home/lucas/Desktop/function.json") as file:
+with open("/home/lucas/Desktop/integration/function.json") as file:
 	 data = json.load(file)['value']
 
 managedata = wings.ManageData(server, userid, domain)
@@ -39,7 +39,6 @@ component = wings.ManageComponent(server, userid, domain, "/home/lucas/.wings")
 
 # Login with password
 component.login(password)
-
 component.add_component_type(func.functionality)
 component.add_component_for_type(func.name, func.functionality)
 component.save_component(func.name, jsonobj)

@@ -1,0 +1,36 @@
+{
+   "inputs":[
+      {
+         "dimensionality":0,
+         "paramDefaultValue":"YYYY-mm-dd",
+         "prefix":"-p1",
+         "isParam":true,
+         "role":"format",
+         "type":"http://www.w3.org/2001/XMLSchema#string",
+         "id":"http://localhost:8080/wings-portal/export/users/lucas/DMDomain/components/library.owl#weka.core.converters.CSVLoader_format"
+      },
+      {
+         "role":"csv-file",
+         "dimensionality":0,
+         "prefix":"-i1",
+         "isParam":false,
+         "id":"http://localhost:8080/wings-portal/export/users/lucas/DMDomain/components/library.owl#weka.core.converters.CSVLoader_csv-file",
+         "type":"http://localhost:8080/wings-portal/export/users/lucas/DMDomain/data/ontology.owl#Text"
+      }
+   ],
+   "requirement":{
+      "softwareIds":[
+
+      ],
+      "storageGB":"0",
+      "needs64bit":false,
+      "memoryGB":"0"
+   },
+   "outputs":[
+
+   ],
+   "location":"/home/lucas/.wings/storage/users/lucas/DMDomain/code/library/weka.core.converters.CSVLoader",
+   "rulesText":null,
+   "type":2,
+   "id":"http://localhost:8080/wings-portal/export/users/lucas/DMDomain/components/library.owl#weka.core.converters.CSVLoader"
+}

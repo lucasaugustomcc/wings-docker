@@ -1,0 +1,13 @@
+[
+    checkDataTypeAndDataFormat: 
+    print(Firing checkDataTypeAndDataFormat) 
+    (?c rdf:type acdom:weka.core.converters.CSVLoaderClass) 
+    (?c ac:hasInput ?idv)
+    (?idv ac:hasArgumentID 'csv-file')
+    (?idv dcdom:hasDataFormat ?format)
+    (?idv dcdom:hasDataType ?type)
+    notEqual(dcdom:CSV ?format)
+    notEqual(dcdom:Text ?type)
+    -> (?c ac:isInvalid "true"^^xsd:boolean)
+       print(Template is invalid because ?idv has data type or format that weka.core.converters.CSVLoader cannot consume)
+]
